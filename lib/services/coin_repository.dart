@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 class CoinRepository {
   static const String _baseUrl = 'https://min-api.cryptocompare.com/';
 
-  Future<List<Coin>> getCoins() async {
+  static Future<List<Coin>> getCoins() async {
     const requestUrl =
         '${_baseUrl}data/top/totalvolfull?limit=25&tsym=USD&page=0';
 
